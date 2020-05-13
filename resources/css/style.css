@@ -6,13 +6,21 @@ body {
 .container{
     display: grid;
     grid-template-columns: 1fr;
+    
 }
 
 .nav-wrapper{
     display: flex;
     justify-content: space-between;
     padding: 38px;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    width: 100%;
+    box-sizing: border-box;
+   
 }
+
 
 .left-side{
     display: flex;
@@ -53,9 +61,12 @@ body {
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+    
 }
 .portfolio-item-wrapper{
     position: relative;
+    
 }
 .portfolio-background-img {
     height: 350px;
@@ -87,8 +98,9 @@ body {
     transition: 1s;
     color: transparent;
     font-weight: 600;
+    
 }
-.img-text-wrapper:hover .subtitle {
+.img-text-wrapper:hover .subtitle{
     font-weight: 600;
     color: lightseagreen;
 }
@@ -102,6 +114,7 @@ body {
 .two-column-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
 }
 
 .profile-img-wrapper img {
@@ -111,7 +124,7 @@ body {
     transition: transform 700ms linear 200ms;
 }
 .profile-img-wrapper img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     
     
 }
